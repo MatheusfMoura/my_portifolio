@@ -192,7 +192,20 @@ i.menu-mobile {
 
 /*FUNDO DAS HABILIDADES*/
 .section-bg{
-  background-color: #a6a6a8;
+  background-color: #2b2b2c;
+  color: #FFF;
+}
+
+.section-bg h2{
+  color: #FFF;
+}
+
+.section-bg p{
+  color: #ffffff;
+}
+
+.section-bg h5, h8{
+  color: #000000;
 }
 
 .cv .cv-title{
