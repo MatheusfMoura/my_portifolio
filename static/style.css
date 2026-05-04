@@ -1,123 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
-
-html,
-body {
-  font-family: Ubuntu, Arial;
+/* =========================================
+   BASE E ESTRUTURA
+   ========================================= */
+html, body {
+  font-family: 'Ubuntu', Arial, sans-serif;
   width: 100%;
-  height: 100%;
+  /* A linha height: 100%; foi removida daqui! */
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background: #020202;
-  overflow-y: auto;
-  width: 260px;
-  transition: all ease-in-out 0.5s;
-  padding: 0 15px;
-  z-index: 9997;
+#main {
+  margin-left: 0;
 }
 
-#header .profile img {
-  margin: 20px auto;
-  display: block;
-  width: 100px;
-  border: 4px solid #f7f8fd;
-  border-radius: 10px;
-}
-
-#header .profile h1 {
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  text-align: center;
-  color: rgb(252, 252, 252);
-}
-
-#header .profile .social-links a {
-  font-size: 1rem;
-  background: #212431;
-  color: rgb(255, 255, 255);
-  padding: 0.6rem;
-  margin-right: 1rem;
-  border-radius: 50%;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
-#header .profile .social-links a:hover {
-  background: #075cb1;
-}
-
-.nav-menu {
-  padding: 1.5rem;
-}
-
-.nav-menu a,
-.nav-menu a:focus {
-  display: flex;
-  align-items: center;
-  color: #969393;
-  transition: 0.3s;
-  font-size: 15px;
-}
-
-.nav-menu a i,
-.nav-menu a:focus i {
-  font-size: 24px;
-  padding-right: 0.8rem;
-  color: #6f7180;
-}
-
-.nav-menu a:hover,
-.nav-menu .active,
-.nav-menu .active:focus,
-.nav-menu li:hover > a {
-  text-decoration: none;
+.section-bg {
+  background-color: #2b2b2c;
   color: #fff;
 }
 
-.nav-menu a:hover i,
-.nav-menu .active i,
-.nav-menu .active:focus i,
-.nav-menu li:hover > a i {
-  color: #66b4d8;
+/* =========================================
+   BARRA DE ROLAGEM PERSONALIZADA (SCROLLBAR)
+   ========================================= */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  width: 12px;
+  box-shadow: inset 0 0 .3rem #00000050;
+  background-color: rgb(255, 255, 255) ;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #303a85;
 }
 
-/*CORPO DA PAGINA*/
-#main {
-  margin-left: 260px;
-}
-
+/* =========================================
+   TELA INICIAL (BANNER HERO PREMIUM)
+   ========================================= */
 section#inicio {
-  background-image: url("../static/img/banner05.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment:scroll;
-  background-position: center;
-
+  /* Fundo escuro premium, puxando levemente para o azul marinho do seu tema */
+  background: radial-gradient(circle at top right, #1a2030, #12141c);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-section#inicio h2 {
-  font-size: 6rem;
-  margin-left: 2rem;
+section#inicio h1 {
+  font-size: 5rem;
+  letter-spacing: -1px;
 }
 
-section#inicio span#subtitle {
-  margin-right: 6rem;
-  margin-left: 0rem;
-  font-size: 30px;
+/* Deixa os botões preenchidos mais vibrantes */
+section#inicio .btn-primary {
+    background-color: #66b4d8;
+    border-color: #66b4d8;
+    color: #12141c;
+}
+
+section#inicio .btn-primary:hover {
+    background-color: #fff;
+    border-color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 180, 216, 0.3) !important;
+}
+
+/* Animação suave para a setinha de rolar a página */
+.bounce-animation {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Ajustes mobile para a tipografia não quebrar a tela */
+@media (max-width: 768px) {
+  section#inicio h1 {
+    font-size: 3.5rem !important;
+  }
+  section#inicio p.lead {
+    font-size: 1.1rem !important;
+  }
 }
 
 .text-shadow {
-  text-shadow: 20px 20px 12px #3c64bb;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 section#inicio div#arraste {
@@ -132,207 +104,311 @@ section#inicio div#arraste a {
   color: #fff;
 }
 
-i.menu-mobile {
-  position: fixed;
-  color: #fff;
-  background-color: #1e1e3a;
-  right: 1rem;
-  top: 1rem;
-  font-size: 1.5rem;
-  border-radius: 4rem;
-  cursor: pointer;
-  z-index: 10;
-  width: 45px;
-  height: 45px;
-  display: none;
-  justify-content: center;
-  align-items: center;
+/* =========================================
+   COMPONENTES GERAIS (CARDS E TEXTOS)
+   ========================================= */
+.dark-card {
+  background-color: #212529;
+  border: none;
+  border-radius: 12px;
+  transition: 0.3s;
 }
 
-.menu-nav-active {
+.dark-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.dark-card h4 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.dark-card p {
+  color: #adb5bd;
+  font-size: 0.95rem;
+}
+
+.text-destaque {
+  color: #66b4d8;
+}
+
+/* =========================================
+   SEÇÃO: HABILIDADES (BADGES)
+   ========================================= */
+.skill-badge {
+  background-color: rgba(102, 180, 216, 0.1);
+  color: #66b4d8;
+  border: 1px solid rgba(102, 180, 216, 0.3);
+  font-size: 0.95rem;
+  padding: 10px 16px;
+  border-radius: 30px; 
+  font-weight: 400;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-badge:hover {
+  background-color: #66b4d8;
+  color: #1a1e29; 
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(102, 180, 216, 0.2);
+}
+
+/* =========================================
+   SEÇÃO: MEU PROCESSO DE TRABALHO
+   ========================================= */
+.process-step {
+  padding: 25px 20px;
+  border-radius: 12px;
+  background-color: rgba(33, 37, 41, 0.5); 
+  border: 1px solid rgba(102, 180, 216, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border-color: #66b4d8;
+}
+
+.step-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  background-color: rgba(102, 180, 216, 0.1);
+  color: #66b4d8;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.process-step:hover .step-icon {
+  background-color: #66b4d8;
+  color: #1a1e29;
+}
+
+/* =========================================
+   SEÇÃO: ESTUDOS DE CASO (PROJECT CARDS)
+   ========================================= */
+.project-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Efeito de levitar o card todo */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4) !important;
+}
+
+/* Container da imagem preparado para o Zoom e com ALTURA FIXA */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 220px; /* Trava a altura para a foto não ficar gigante */
+  border-top-left-radius: 15px; 
+  border-top-right-radius: 15px;
+}
+
+.img-wrapper img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%; /* Preenche exatamente os 220px */
+  object-fit: cover; /* Encaixa a imagem perfeitamente, cortando as sobras */
+  object-position: top center; /* Garante que o topo do print do site seja a parte visível */
+  display: block;
+}
+
+/* Zoom na imagem ao passar o mouse */
+.project-card:hover .img-wrapper img {
+  transform: scale(1.08);
+}
+
+/* Fundo escuro invisível que aparece no hover */
+.img-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  background: rgba(10, 15, 24, 0.75); /* Azul/Preto escuro translúcido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .img-overlay {
+  opacity: 1;
+}
+
+/* Textos e Cores do Corpo do Card */
+.case-study-text p {
+  line-height: 1.6;
+}
+
+.text-danger {
+  color: #ff6b6b !important; 
+}
+
+.text-success {
+  color: #51cf66 !important; 
+}
+
+/* Ícone do GitHub no rodapé */
+.project-card .bi-github {
+  transition: color 0.3s ease;
+}
+
+.project-card .bi-github:hover {
+  color: #fff !important;
+}
+
+/* =========================================
+   ANIMAÇÕES DE SCROLL (DATA-ANIME)
+   ========================================= */
+[data-anime] { opacity: 0; transition: 1s; }
+[data-anime="down"] { transform: translate3d(0, -100%, 0); }
+[data-anime="up"] { transform: translate3d(0, 50px, 0); }
+[data-anime="left"] { transform: translate3d(-50px, 0, 0); }
+[data-anime="right"] { transform: translate3d(50px, 0, 0); }
+[data-anime].animate { opacity: 1; transform: translate3d(0, 0, 0); }
+
+/* =========================================
+   RESPONSIVIDADE (MOBILE & TABLET)
+   ========================================= */
+@media (max-width: 1024px) {
+  section#inicio .col-md-5 {
+    padding-top: 6rem; 
+  }
+  
+  section#inicio h2{
+    font-size: 2.8rem !important; 
+    margin-left: 0 !important; 
+    text-align: center;
+    width: 100%;
+  }
+  
+  section#inicio span#subtitle{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block; 
+  }
+  
+  section#inicio div#arraste {
+    margin: 2rem auto 0 auto;
+    justify-content: center !important;
+    width: 100%;
+  }
+}
+/* =========================================
+   ESTILOS DO MODAL E CARROSSEL DE IMAGENS
+   ========================================= */
+.bg-dark-opacity {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+/* Garante que o modal não quebra o scroll da página */
+.modal-open {
     overflow: hidden;
 }
 
-.menu-nav-active #header {
-    left: 0;
+#carouselChecklist img {
+    height: 450px;
+    object-fit: contain; /* Mantém a proporção dos prints sem cortar */
+    background-color: #1a1e29;
 }
 
-@media (max-width: 1024px) {
-  #header {
-    left: -300px;
-  }
-  i.menu-mobile{
-    display: flex;
-  }
-  section#inicio h2{
-    font-size: 3.5rem ;
-  }
-  section#inicio span#subtitle{
-    margin-right: 0;
-    font-size: 1rem;
-  }
-  #main{
-      margin-left: 0;
-  }
+/* =========================================
+   ESTILOS DO MODAL CUSTOMIZADO
+   ========================================= */
+.modal-open {
+    overflow: hidden; /* Evita rolagem dupla */
 }
 
-*::-webkit-scrollbar {
-  width: 8px;
+/* Deixa a imagem com formato de "App" e remove aquele fundo preto feio */
+.mockup-mobile {
+    max-height: 400px;
+    object-fit: cover;
+    border: 1px solid rgba(102, 180, 216, 0.2);
+    border-radius: 12px;
 }
 
-*::-webkit-scrollbar-track {
-  width: 12px;
-  box-shadow: inset 0 0 .3rem #00000050;
-  background-color: rgb(255, 255, 255) ;
+.terminal-header {
+    background-color: #1a2030;
+    border-bottom: 1px solid rgba(102, 180, 216, 0.1);
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #303a85;
+.terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-/*FUNDO DAS HABILIDADES*/
-.section-bg{
-  background-color: #2b2b2c;
-  color: #FFF;
+/* =========================================
+   COMPOSIÇÃO DE TERMINAIS (HERO SECTION)
+   ========================================= */
+.terminal-window {
+    background-color: #12141c;
+    border: 1px solid rgba(102, 180, 216, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px; /* Aumentamos a largura para 500px */
 }
 
-.section-bg h2{
-  color: #FFF;
+/* Telas sobrepostas em pirâmide bem mais espaçadas */
+.mockup-back {
+    transform: translate(-140px, -110px) scale(0.85); /* Muito mais para a esquerda e cima */
+    z-index: 1;
+    opacity: 0.35;
+    filter: blur(1.5px); 
+    transition: all 0.5s ease;
 }
 
-.section-bg p{
-  color: #ffffff;
+.mockup-middle {
+    transform: translate(140px, -60px) scale(0.9); /* Muito mais para a direita e cima */
+    z-index: 2;
+    opacity: 0.7;
+    transition: all 0.5s ease;
 }
 
-.section-bg h5, h8{
-  color: #000000;
+.mockup-front {
+    transform: translate(0px, 80px) scale(1); /* Mais para baixo (Ponta do V) */
+    z-index: 3;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transition: all 0.5s ease;
 }
 
-.cv .cv-title{
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #050d18;
+/* Efeito Interativo: Abre ainda mais a pirâmide ao passar o mouse */
+.col-lg-5:hover .mockup-back {
+    transform: translate(-180px, -140px) scale(0.9);
+    opacity: 0.9;
+    filter: blur(0px);
 }
 
-.cv .cv-item {
-  padding: 0 0 20px 20px;
-  margin-top: -4px;
-  border-left: 4px solid #000000;
-  position: relative;
+.col-lg-5:hover .mockup-middle {
+    transform: translate(180px, -80px) scale(0.95);
+    opacity: 0.95;
 }
 
-.cv .cv-item h4 {
-  line-height: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 10px;
+.col-lg-5:hover .mockup-front {
+    transform: translate(0px, 100px) scale(1.02);
 }
 
-.cv .cv-item h5 {
-  background: #455975;
-  color: #fff;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.cv .cv-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -9px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #040405;
-  background: rgb(255, 255, 255);
-  border-radius: 50%;
-}
-
-.carousel-control-prev{
-  margin-left: -8rem;
-}
-
-.carousel-control-next{
-  margin-right: -8rem;
-}
-
-.carousel-indicators{
-  margin-bottom: -35px;
-}
-
-/* Animação */
-
-[data-anime] {
-  opacity: 0;
-  transition: 1s;
-}
-
-[data-anime="down"] {
-  transform: translate3d(0, -100%, 0);
-}
-
-[data-anime="up"] {
-  transform: translate3d(0, 100%, 0);
-}
-
-[data-anime="left"] {
-  transform: translate3d(-100%, 0, 0);
-}
-
-[data-anime="right"] {
-  transform: translate3d(50px ,0 ,0);
-}
-
-[data-anime].animate {
-  opacity: 1;
-  transform: translate3d(0 ,0 ,0);
-}
-
-@media (max-width: 1860px){
-  .carousel-control-prev{
-    margin-left: 0;
-  }
-  
-  .carousel-control-next{
-    margin-right: 0;
-  }
-
-  [data-anime="right"] {
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
-#btn-enviar-loader{
-  display: none;
-}
-
-#alerta {
-  position: fixed;
-  z-index: 10;
-  top: 30px;
-  right: 30px;
-}
-
-#footer{
-  padding: 15px;
-  color: #fff;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 260px;
-  z-index: 9999;
-  background-color: #090f18;
-  transition: .3s;
-}
-
-@media (max-width: 1012px) {
-  #footer{
-    position: static;
-    width: auto;
-    padding: 20px 15px;
-  }
-}
+/* Mantendo os elementos do terminal */
+.terminal-header { background-color: #1a2030; border-bottom: 1px solid rgba(102, 180, 216, 0.1); }
+.terminal-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.cursor-blink { font-weight: bold; color: #66b4d8; animation: blink 1s step-end infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }

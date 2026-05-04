@@ -9,659 +9,446 @@
     <link rel="stylesheet" href="static/BootStrap/css/bootstrap.css">
     <link rel="stylesheet" href="static/style.css">
     <link rel="icon" type='image/png' href="static/img/icon_logo.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <title>acreano</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Matheus Figueiredo - Portfólio</title>
 </head>
 
 <body>
+
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="myBar"></div>
+    </div>
     
-    <i class="bi bi-list menu-mobile"></i>
-
-    <aside id='header'>
-        <section class="profile">
-            <img src="static/img/perfil02.jpg" alt="Foto do Matheus">
-            <h1>Matheus Figueiredo</h1>
-            <div class="social-links mt-4 text-center">
-                <a target="_blank" href="#">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a target="_blank" href="https://github.com/MatheusfMoura">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCmcftjrvIIIeRF3DjHvwQGw">
-                    <i class="bi bi-youtube"></i>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/polodesign_/">
-                    <i class="bi bi-instagram"></i>
-                </a>
-            </div>
-        </section>
-
-        <nav id='navbar' class="nav-menu">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#inicio"><i class="bi bi-house"
-                            aria-hidden="true"></i> Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#habilidades"><i class="bi bi-list-check" aria-hidden="true"></i>
-                        Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark" aria-hidden="true"></i>
-                        Currículo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio"><i class="bi bi-collection" aria-hidden="true"></i>
-                        Portfólio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato"><i class="bi bi-envelope" aria-hidden="true"></i> Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
-
     <main id="main">
 
-        <section id="inicio" class="row m-0 p-0">
-            <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
-                <h2 class="text-white text-shadow">Matheus Figueiredo</h2>
-                <span id="subtitle" class="text-white text-shadow">Desenvolvedor Web</span>
-            </div>
-
-            <div class="col-md-7 d-flex justify-content-end align-items-end">
-                <div id="arraste" class="d-flex align-items-center">
-                    <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-                    <a href="#sobre">Arraste para mais</a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="container mt-5" id='sobre'>
-            <div class="row w-100">
-                <div class="col-md-12" data-anime="down">
-                    <h2 class='pt-3'>Sobre</h2>
-                    <p>Eu acredito no poder da transformação que o conhecimento tem onde nossa imaginação é um espaço infinito de possibilidades. Atualmente estudante de “Análise e desenvolvimento de sistemas”, onde uma de minhas paixões é a programação. Especialista em informática, onde atuo na área a mais de 10 anos. Também veterano na plataforma Photoshop, onde criar designers é uma forte paixão minha. “Estou disposto a topar os desafios que a empresa tem a me propor, e com a qualidade de meus serviços alavancar ainda mais o meu crescimento e o da empresa”.</p>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <img class="img-fluid shadow" src="static/img/perfil02.jpg" alt="Foto do Matheus" data-anime="left">
-                </div>
-                <div class="col-md-8" data-anime="right">
-                    <h3>Desenvolvedor Web</h3>
-                    <p>Atualmente trabalhando em Home Office como desenvolvedor fullstack e designer grafico. </p>
-
-                    <div class="row mt-3 mb-3">
-                        <div class="col-md-6">
-                            <ul class="list-group list-group-flush fs-5">
-                                <li class="list-group-item">
-                                    Niver: <span class="fw-lighter">19 de Outubro de
-                                        1996</span>
-                                </li>
-                                <li class="list-group-item">
-                                    Idade: <span class="fw-lighter">25 anos</span>
-                                </li>
-                                <li class="list-group-item">
-                                    Cidade: <span class="fw-lighter">Cruzeiro do Sul</span>
-                                </li>
-                                <li class="list-group-item">
-                                    Estado: <span class="fw-lighter">Acre</span>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-group list-group-flush fs-5">
-                                <li class="list-group-item">Hobby: <span class="fw-lighter">Jogos Online</span></li>
-                                <li class="list-group-item">Site: <a href="http://www.acreano.com/" target="_blank"
-                                        class="fw-lighter text-decoration-none link-dark">links.acreano</a></li>
-                                <li class="list-group-item">Trabalho: <a href="#"
-                                        target="_blank" class="fw-lighter text-decoration-none link-dark">Desenvolvedor Front End</a></li>
-                                <li class="list-group-item">Experiência: <span class="fw-lighter"> +3
-                                        anos</span></li>
-
-                            </ul>
+        <section id="inicio" class="d-flex align-items-center">
+            <div class="container pt-5">
+                <div class="row align-items-center">
+                    
+                    <!-- Lado Esquerdo: Textos e Botões -->
+                    <div class="col-lg-7" data-anime="left">
+                        <span class="badge skill-badge mb-3 px-3 py-2 fs-6"><i class="bi bi-code-square me-2"></i>Consultor & Desenvolvedor Full Stack</span>
+                        <h1 class="display-3 text-white fw-bold mb-3 text-shadow">Matheus<br><span class="text-destaque">Figueiredo</span></h1>
+                        <p class="lead text-light mb-5 fs-4" style="max-width: 600px; line-height: 1.6;">
+                            Arquitetando sistemas sob medida e painéis gerenciais que transformam gargalos operacionais em lucro e eficiência.
+                        </p>
+                        
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#projetos" class="btn btn-primary rounded-pill px-4 py-3 fw-bold shadow-lg text-uppercase" style="letter-spacing: 1px;">
+                                <i class="bi bi-rocket-takeoff me-2"></i>Ver Soluções
+                            </a>
+                            <a href="#contato" class="btn btn-outline-info rounded-pill px-4 py-3 fw-bold text-uppercase" style="letter-spacing: 1px;">
+                                Falar com Matheus
+                            </a>
                         </div>
                     </div>
 
-                    <p>Além de trabalhar com desenvolvimento web, estou buscando cada vez mais me aperfeiçoar e especilizar na área.</p>
+                    <!-- Lado Direito: Composição de Terminais em Cascata -->
+                    <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center position-relative" style="min-height: 450px;" data-anime="right">
+                        
+                        <!-- Terminal 1: Fundo (TopRent API) -->
+                        <div class="terminal-window shadow-lg position-absolute mockup-back">
+                            <div class="terminal-header d-flex align-items-center px-3 py-2">
+                                <span class="terminal-dot bg-danger"></span><span class="terminal-dot bg-warning mx-2"></span><span class="terminal-dot bg-success"></span>
+                                <span class="ms-3 text-muted small font-monospace">~/projetos/toprent_api.js</span>
+                            </div>
+                            <div class="terminal-body p-3 text-start font-monospace">
+                                <pre class="m-0 text-secondary" style="font-size: 0.75rem; overflow: hidden;"><code>const express = require('express');
+                                app.post('/api/reservas', async (req, res) => {
+                                    let disp = await checkFrota(req.body.id);
+                                    if (!disp) return res.status(400);
+                                    
+                                    await gerarContrato(req.body);
+                                    return res.status(200).send("Confirmado");
+                                });</code></pre>
+                            </div>
+                        </div>
 
+                        <!-- Terminal 2: Meio (SGP Lógica) -->
+                        <div class="terminal-window shadow-lg position-absolute mockup-middle">
+                            <div class="terminal-header d-flex align-items-center px-3 py-2">
+                                <span class="terminal-dot bg-danger"></span><span class="terminal-dot bg-warning mx-2"></span><span class="terminal-dot bg-success"></span>
+                                <span class="ms-3 text-muted small font-monospace">~/projetos/sgp_core.js</span>
+                            </div>
+                            <div class="terminal-body p-3 text-start font-monospace">
+                            <pre class="m-0 text-info" style="font-size: 0.75rem; overflow: hidden;"><code>function classificarMaterial(diferenca) {
+                                    if (diferenca > 0) {
+                                        return { status: 'RMA', acao: 'estoque' };
+                                    } else {
+                                        return { status: 'DMA', acao: 'substituir' };
+                                    }
+                                }
+                                // Processando De/Para
+                                exportarXLSX(relatorioFinal);</code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Terminal 3: Frente (Estático) -->
+                        <div class="terminal-window shadow-lg position-absolute mockup-front">
+                            <div class="terminal-header d-flex align-items-center px-3 py-2">
+                                <span class="terminal-dot bg-danger"></span><span class="terminal-dot bg-warning mx-2"></span><span class="terminal-dot bg-success"></span>
+                                <span class="ms-3 text-muted small font-monospace">~/projetos/init.py</span>
+                            </div>
+                            <div class="terminal-body p-4 text-start font-monospace">
+                                <pre class="m-0 text-light" style="font-size: 0.85rem; overflow: hidden;"><code class="text-success">def init_system():
+                                    print("Hello, World!")
+                                    
+                                    # Carregando módulos...
+                                    print("Otimizando processos B2B...")
+                                    print("Automatizando rotinas operacionais...")
+                                    
+                                    return "Sistemas prontos para escalar."
+
+                                init_system()</code><span class="cursor-blink">_</span></pre>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            <!-- Mantivemos a setinha animada embaixo -->
+            <div id="arraste" class="position-absolute bottom-0 end-0 p-4">
+                <a href="#sobre" class="text-white text-decoration-none d-flex align-items-center opacity-75 hover-opacity-100 transition">
+                    <span class="me-2 fs-6">Explorar</span>
+                    <i class="bi bi-chevron-down fs-4 bounce-animation"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="container mt-3" id='sobre'>
+            <div class="row">
+                <div class="col-md-12" data-anime="down">
+                    <h2 class='pt-0'>Sobre</h2>
+                    <p class="lead text-muted mb-1">Transformando problemas complexos em soluções digitais de alto nível.</p>
+                </div>
+            </div>
+
+            <div class="row mt-2 align-items-center">
+                
+                <div class="col-lg-4 col-md-5 text-center mb-4 mb-md-0">
+                    <img class="img-fluid shadow-lg rounded w-100" src="static/img/Fotos Perfil/Perfil3.jpg" alt="Foto do Matheus" data-anime="left">
+                </div>
+                
+                <div class="col-lg-8 col-md-7" data-anime="right">
+                    <h3 class="mb-3">Muito além do código: foco em resultados.</h3>
+                    <p>Com mais de 10 anos de experiência no mercado de tecnologia, construí uma base sólida que une o melhor de dois mundos: <strong>Desenvolvimento Web Full Stack</strong> e <strong>Design Profissional (UI/UX)</strong>.</p>
+                    
+                    <p>Acredito que um software ou site não deve ser apenas "bonito", ele precisa ser uma ferramenta estratégica. Minha especialidade é entender a dor do seu negócio e arquitetar sistemas sob medida, landing pages de alta conversão e painéis administrativos que automatizam processos operacionais.</p>
+                    
+                    <p class="mb-4">Não busco apenas "entregar um projeto". Meu objetivo é ser o parceiro tecnológico que vai alavancar os resultados da sua empresa através de soluções modernas, seguras e eficientes, cuidando de toda a jornada — desde o design da interface até a lógica do banco de dados.</p>
+
+                    <div class="row">
+                        <!-- Lado Esquerdo (2 itens) -->
+                        <div class="col-sm-6">
+                            <ul class="list-group list-group-flush fs-6">
+                                <li class="list-group-item bg-transparent border-bottom py-2 px-0">
+                                    <i class="bi bi-geo-alt text-destaque me-2"></i> <strong class="text-dark">Estado:</strong> <span class="text-muted">Acre</span> <span class="dino-emoji ms-1">🦖</span>
+                                </li>
+                                <li class="list-group-item bg-transparent border-bottom py-2 px-0">
+                                    <i class="bi bi-briefcase text-destaque me-2"></i> <strong class="text-dark">Perfil:</strong> <span class="text-muted">Consultor & Desenvolvedor</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Lado Direito (2 itens) -->
+                        <div class="col-sm-6">
+                            <ul class="list-group list-group-flush fs-6">
+                                <li class="list-group-item bg-transparent border-bottom py-2 px-0">
+                                    <i class="bi bi-pc-display-horizontal text-destaque me-2"></i> <strong class="text-dark">Foco:</strong> <span class="text-muted">Soluções B2B & Web</span>
+                                </li>
+                                <li class="list-group-item bg-transparent border-bottom py-2 px-0">
+                                    <i class="bi bi-award text-destaque me-2"></i> <strong class="text-dark">Experiência:</strong> <span class="text-muted">+10 anos em TI</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="mt-5 section-bg" id="habilidades">
-
             <div class="container pb-5">
-                <h2 class='pt-5'>Habilidades</h2>
-                <p>Em todo esse tempo de minha coexistência no ramo da tecnologia, eu adquiri algumas habilidades técnicas e não técnicas,
-                    a maioria delas estão aqui, de acordo com a porcentagem de conhecimento que eu acredito ter em cada
-                    uma.</p>
+                <h2 class='pt-5 pb-3' data-anime="down">Habilidades</h2>
+                <p class="mb-5 text-light" data-anime="down">Em todo esse tempo de minha coexistência no ramo da tecnologia, adquiri um conjunto sólido de habilidades técnicas e interpessoais, focadas em entregar as melhores soluções criativas e funcionais.</p>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class='mt-3 mb-0'>HTML</p>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                                data-anime="left" aria-valuemin="0" aria-valuemax="100">80%</div>
-                        </div>
-                        <p class="mt-3 mb-0">CSS</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 65%;"
-                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="200">65%</div>
-                        </div>
-                        <p class="mt-3 mb-0">JavaScript</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 50%;"
-                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                        </div>
-                        <p class="mt-3 mb-0">Python</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 15%;"
-                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
-                        </div>
-                        <p class="mt-3 mb-0">Java</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 52%;"
-                                aria-valuenow="52" aria-valuemin="0" aria-valuemax="100">52%</div>
-                        </div>
-                        <p class="mt-3 mb-0">Git</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 87%;"
-                                aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">87%</div>
-                        </div>
-                        <p class="mt-3 mb-0">Inglês</p>
-                        <div class="progress mb-3">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 40%;"
-                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                <div class="row g-4">
+                    
+                    <div class="col-md-4" data-anime="up">
+                        <div class="card dark-card h-100 p-4">
+                            <h4 class="mb-4 text-destaque"><i class="bi bi-code-slash me-2"></i>Desenvolvimento</h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge skill-badge">HTML5</span>
+                                <span class="badge skill-badge">CSS3</span>
+                                <span class="badge skill-badge">JavaScript</span>
+                                <span class="badge skill-badge">Java</span>
+                                <span class="badge skill-badge">Python</span>
+                                <span class="badge skill-badge">Git & GitHub</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <p class="mt-3 mb-0">Excel Avançado</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 80%;"
-                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                        </div>
-                        <p class="mt-3 mb-0">Power Bi (Business Intelligence)</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 42%;"
-                                aria-valuenow="42" aria-valuemin="0" aria-valuemax="100">42%</div>
-                        </div>
-                        <p class="mt-3 mb-0">AutoCad</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 30%;"
-                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-                        </div>
-                        <p class="mt-3 mb-0">Illustrator</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 28%;"
-                                aria-valuenow="28" aria-valuemin="0" aria-valuemax="100">28%</div>
-                        </div>
-                        <p class="mt-3 mb-0">Photoshop</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 92%;"
-                                aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
-                        </div>
-                        <p class="mt-3 mb-0">After Effects</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 41%;"
-                                aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
-                        </div>
-                        <!--<p class="mt-3 mb-0">NoSQL</p>
-                        <div class="progress mb-3">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 44%;"
-                                aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">44%</div>
-                        </div>-->
-                    </div>
-                </div>
 
-                <hr class='w-50 me-auto ms-auto'>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="mt-3 mb-0">Trabalho em equipe</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 95%;"
-                                aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-                        </div>
-
-                        <p class="mt-3 mb-0">Proatividade</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 98%;"
-                                aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">98%</div>
-                        </div>
-
-                        <p class="mt-3 mb-0">Orientação a detalhes</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 85%;"
-                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    <div class="col-md-4" data-anime="up">
+                        <div class="card dark-card h-100 p-4">
+                            <h4 class="mb-4 text-destaque"><i class="bi bi-palette me-2"></i>Design & Dados</h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge skill-badge">Photoshop</span>
+                                <span class="badge skill-badge">Illustrator</span>
+                                <span class="badge skill-badge">After Effects</span>
+                                <span class="badge skill-badge">AutoCAD</span>
+                                <span class="badge skill-badge">Excel Avançado</span>
+                                <span class="badge skill-badge">Power BI</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <p class="mt-3 mb-0">Comunicação</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 95%;"
-                                aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+
+                    <div class="col-md-4" data-anime="up">
+                        <div class="card dark-card h-100 p-4">
+                            <h4 class="mb-4 text-destaque"><i class="bi bi-person-lines-fill me-2"></i>Soft Skills</h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge skill-badge">Trabalho em equipe</span>
+                                <span class="badge skill-badge">Proatividade</span>
+                                <span class="badge skill-badge">Orientação a detalhes</span>
+                                <span class="badge skill-badge">Comunicação</span>
+                                <span class="badge skill-badge">Empatia</span>
+                                <span class="badge skill-badge">Comprometimento</span>
+                                <span class="badge skill-badge">Inglês</span>
+                            </div>
                         </div>
-
-                        <p class="mt-3 mb-0">Empatia</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 85%;"
-                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                        </div>
-
-                        <p class="mt-3 mb-0">Comprometimento</p>
-                        <div class="progress">
-                            <div class="progress-bar" data-anime="left" role="progressbar" style="width: 98%;"
-                                aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">98%</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="mt-5 cv" id="curriculo">
-
-            <div class="container pb-5">
-                <h2 class="pt-3 pb-4">Currículo</h2>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3 class="cv-title">Educação</h3>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Técnico em Eletrotécnica</h4>
-                            <h5>2020 - 2021</h5>
-                            <p><em>Instituto Brasileiro de Formação Distrito Federal (DF) Brasilia</em></p>
-                            <p>Curso voltado para os fundamentos e aprofundamentos das mais significantes técnicas em eletrotécnica, desde a rede de distrubuição a projetos em AutoCad, com carga horária de 1.440 horas.</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Excel Básico</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Curso voltado a área de excel com o foco nos principais fundamentos 
-                                voltados ao excel básico, com carga horária de 11,5 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Excel com Power Query</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Recebi conceitos e técnicas na transformação e obtenção de dados em Power Query, com solução de problemas de tratamento da informação. Com carga horária de 10 horas </p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Excel com Macros VBA</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Curso voltado a programação em exel com macros, com 
-                                carga horária de 12 horas.</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Excel formação especialista</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Recebi conceitos e tecnicas sobre todos os principais fundamentos de excel, desde a transformação de dados, até as funções mais importantes. Curso com carga horáriade  42 horas.</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>World formação especialista ABNT</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Curso voltado a especialização do padrão brasileiro dentre o aprofundamento do programa world sobre todas as suas tecnicas de funcionalidades, voltada para o dominio por completo do programa. Curso com carga horária de 20 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Tratamento de dados com Power Bi / Power Query</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Curso voltado a especialização do padrão brasileiro dentre o aprofundamento do programa world sobre todas as suas tecnicas de funcionalidades, voltada para o dominio por completo do programa. Curso com carga horária de 20 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>AutoCad especialista</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Curso voltado para conhecimentos profundos de autocad , em projetos arquitetônicos e eletricos. Curso com carga horária de 22 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Almoxarife</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>C.G.O Faculdade Sul Mineira</em></p>
-                            <p>Curso voltado para a finalidade de supervisionar e coordenar almoxarifados. Curso com a carga horária de 70 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>HTML, CSS & JavaScript</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Curso com a finalidade para aprofudamento dos principais fundamentos da web front end. Curso com a carga horária de 6 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>JavaScript</h4>
-                            <h5>2020 - 2020</h5>
-                            <p><em>Instituto Brasileiro de Formação Udemy</em></p>
-                            <p>Curso voltado para os principais conceitos de JavaScript para o front end. Curso com a carga horária de 77 horas</p>
-                        </div>
-
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Técnico em informática</h4>
-                            <h5>2016 - 2017</h5>
-                            <p><em>Prime Cursos - Brasilia DF</em></p>
-                            <p>Curso com a finalidade de aprofundamento em redes, sistemas e periféricos. Curso com carga horária de 400 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Informática na matemática</h4>
-                            <h5>2016 - 2016</h5>
-                            <p><em>Amazônia Cursos</em></p>
-                            <p>Curso voltado para conhecimentos básicos em números binários. Curso com a carga horária de 40 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Montagem e manutenção de computadores</h4>
-                            <h5>2016 - 2016</h5>
-                            <p><em>Universidade de Santa Cruz UNISC</em></p>
-                            <p>Curso voltado para desmontagem e montagem de computadores para manutenção preventiva. Curso com a carga horária de 260 horas</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Operador de computador</h4>
-                            <h5>2016 - 2016</h5>
-                            <p><em>Senac</em></p>
-                            <p>Curso com a finalidade de conhecimentos básicos sobre funcionalidades de computação e suas vantagens. Curso com a carga horária de 196 horas</p>
-                        </div>
-
-                    </div>
-
-<!------------------------PERFIL PROFICIONAL--------------------------->
-                    <div class="col-md-6">
-                        <h3 class="cv-title">Profissional</h3>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Analista e Desenvolvedor Front End</h4>
-                            <h5>2021 - 2021</h5>
-                            <p><em>Bello Alimentos</em></p>
-                            <p>Analista de informações gerenciais e desenvolvedor de projetos webs voltados para segurança interna da empresa e facilidade no acesso das informações aos gerentes e supervisores.</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Supervisor de Almoxarifado</h4>
-                            <h5>2019 - 2021</h5>
-                            <p><em>Impetus Engenharia</em></p>
-                            <p>Auxiliar administrativo, responsável técnico em manutenção de computadores e sistemas e supervisor de almoxarifado</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Auxiliar administrativo</h4>
-                            <h5>2019 - 2019</h5>
-                            <p><em>World Eletricidade</em></p>
-                            <p>Responsável pelas movimentações da empresa no mercado e representante da marca em licitações</p>
-                        </div>
-
-                        <div class='cv-item' data-anime="up">
-                            <h4>Sargenteação</h4>
-                            <h5>2016 - 2017</h5>
-                            <p><em>61° Batalhão de infantaria de selva</em></p>
-                            <p>Responsável técnico em manutenção de sistemas e periféricos e analista de informações sigilosas.</p>
-                        </div>
-                        
-                        
-                        
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section id="portfolio" class="section-bg mt-5">
-            <div class="container pb-5 pt-5" data-anime="left">
-
-                <h2 class="pb-4">Portfólio</h2>
-
-                <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-
-                            <div class="row row-cols-1 row-cols-md-3 g-4">
-                                <div class="col">                             
-                                    <div class="card">
-                                        <img src="./static/img/Capturar3.PNG" class="card-img-top"
-                                            alt="Print do blog">
-                                        <div class="card-body">
-                                            <h5 class="card-title">WorkShop</h5>
-                                            <h8 class="card-text">Projeto criado com HTML e CSS</h8>
-                                            <br>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="#"
-                                                    target='_blank' class="btn btn-outline-dark me-3"><i
-                                                        class="bi bi-github"></i></a>
-                                                <a href="http://paginacaptura-com.preview-domain.com/?__cf_chl_jschl_tk__=KNmdEUzy32U5g6nNYKsq8OiGTt5AcFRajecH7msjyPs-1637163407-0-gaNycGzNA_0" target='_blank'
-                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="./static/img/Capturar.PNG" class="card-img-top img-fluid w-100"
-                                            alt="">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Página de Links</h5>
-                                            <h8 class="card-text">Projeto front-end criado com HTML, CSS, Bootstrap e
-                                                JavaScript</h8>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/MatheusfMoura/site_links"
-                                                    target='_blank' class="btn btn-outline-dark me-3"><i
-                                                        class="bi bi-github"></i></a>
-                                                <a href="http://www.acreano.com/" target='_blank'
-                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="./static/img/Capturar2.PNG" class="card-img-top img-fluid w-100"
-                                            alt="">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Tela de login</h5>
-                                            <h8 class="card-text">Projeto front-end criado com HTML, CSS, Bootstrap e
-                                                JavaScript</h8>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/codethi/cronometro-intervalo" target='_blank'
-                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                <a href="http://teladelogin-com.preview-domain.com/" target='_blank'
-                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <div class="row row-cols-1 row-cols-md-3 g-4">
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="./static/img/Capturar3.PNG" class="card-img-top img-fluid w-100"
-                                            alt="print do blog">
-                                        <div class="card-body">
-                                            <h5 class="card-title">WorkShop</h5>
-                                            <h8 class="card-text">Projeto criado com HTML e CSS</h8>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="#" target='_blank'
-                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                <a href="http://paginacaptura-com.preview-domain.com/?__cf_chl_jschl_tk__=KNmdEUzy32U5g6nNYKsq8OiGTt5AcFRajecH7msjyPs-1637163407-0-gaNycGzNA_0" target='_blank'
-                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="./static/img/Capturar.PNG" class="card-img-top img-fluid w-100"
-                                            alt="print do blog">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Página de links</h5>
-                                            <h8 class="card-text">Projeto front-end criado com HTML, CSS, Bootstrap e
-                                                JavaScript
-                                            </h8>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/MatheusfMoura/site_links"
-                                                    target='_blank' class="btn btn-outline-dark me-3"><i
-                                                        class="bi bi-github"></i></a>
-                                                <a href="http://www.acreano.com/" target='_blank'
-                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="./static/img/Capturar2.PNG" class="card-img-top img-fluid w-100"
-                                            alt="print do blog">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Tela de login</h5>
-                                            <h8 class="card-text">Projeto front-end criado com HTML, CSS, Bootstrap e
-                                                JavaScript</h8>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="https://github.com/codethi/cronometro-intervalo" target='_blank'
-                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
-                                                <a href="http://teladelogin-com.preview-domain.com/" target='_blank'
-                                                    class="btn btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="pt-5 pb-5" id="contato">
-
-            <div class="container mb-5">
-                <h2 class='pt-3 pb-3'>Contato</h2>
-
-                <div class="row">
-
-                    <div class="col-md-5">
-                        <div class="card p-5 shadow border-0" data-anime="up">
-                            <div class="endereco">
-                                <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
-                                <p>Cruzeiro do Sul, Acre</p>
-                            </div>
-
-                            <div class="email">
-                                <h4><i class="bi bi-envelope"></i> Email:</h4>
-                                <p>contapessoal_moura@hotmail.com</p> 
-                            </div>
-
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.819936006093!2d-72.67821155656152!3d-7.622297192306242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9199cd6deebfd8c7%3A0xa5884e24b7ff82a5!2sCruzeiro%20do%20Sul%2C%20AC!5e0!3m2!1spt-BR!2sbr!4v1637012280812!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section class="mt-5 pt-5 pb-5" id="servicos">
+            <div class="container">
+                <h2 class="pb-4" data-anime="down">Minhas Soluções</h2>
+                <p class="mb-5 text-muted" data-anime="down">Desenvolvimento sob medida focado em resolver problemas reais, automatizar processos e escalar o seu negócio.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4" data-anime="up">
+                        <div class="card dark-card h-100 p-4 text-center border-0 shadow">
+                            <i class="bi bi-laptop display-4 text-destaque mb-3"></i>
+                            <h4 class="text-white">Sistemas Web Customizados</h4>
+                            <p class="text-light small mt-2">Automatize processos da sua empresa com painéis administrativos e sistemas web sob medida, garantindo segurança e eficiência operacional.</p>
                         </div>
                     </div>
-
-                    <div class="col-md-7 mt-5 mt-md-0">
-                        <div class="card p-5 h-100 shadow border-0" data-anime="left">
-
-                            <form class="row g-3" action='/send' method="POST">
-                                <div class="col-md-6">
-                                    <label for="nome" class="form-label">Nome:</label>
-                                    <input type="text" class="form-control" id="nome" name='nome'
-                                        placeholder='Digite seu nome' required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label">Email:</label>
-                                    <input type="email" class="form-control" id="email" name='email'
-                                        placeholder='Digite seu email' required>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="mensagem" class="form-label">Mensagem:</label>
-                                    <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
-                                        placeholder="Digite sua mensagem" required></textarea>
-                                </div>
-
-
-                                <div class="col-12 d-flex justify-content-center mt-4">
-                                    <button id='btn-enviar' type="submit" class="btn btn-primary">Enviar
-                                        mensagem</button>
-
-                                    <button id='btn-enviar-loader' class="btn btn-primary" type="button" disabled>
-                                        <span class="spinner-border spinner-border-sm" role="status"
-                                            aria-hidden="true"></span>
-                                        Enviando...
-                                    </button>
-                                </div>
-                            </form>
-
+                    
+                    <div class="col-md-4" data-anime="up">
+                        <div class="card dark-card h-100 p-4 text-center border-0 shadow">
+                            <i class="bi bi-rocket-takeoff display-4 text-destaque mb-3"></i>
+                            <h4 class="text-white">Landing Pages de Alta Conversão</h4>
+                            <p class="text-light small mt-2">Páginas otimizadas para velocidade e design premium para capturar leads, apresentar seus serviços e escalar suas vendas.</p>
                         </div>
                     </div>
-
+                    
+                    <div class="col-md-4" data-anime="up">
+                        <div class="card dark-card h-100 p-4 text-center border-0 shadow">
+                            <i class="bi bi-diagram-3 display-4 text-destaque mb-3"></i>
+                            <h4 class="text-white">Integração de APIs</h4>
+                            <p class="text-light small mt-2">Conecte seus sistemas, automatize fluxos de dados e faça as suas ferramentas de trabalho conversarem entre si.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
 
+        <section class="mt-2 pt-5 pb-5 section-bg" id="processo">
+            <div class="container">
+                <h2 class="pb-4 text-center text-white" data-anime="down">Meu Processo de Trabalho</h2>
+                <p class="text-center text-light mb-5" data-anime="down">Como transformo a sua ideia em uma solução digital completa.</p>
+                
+                <div class="row text-center mt-4">
+                    <div class="col-md-3 col-sm-6 mb-4" data-anime="left">
+                        <div class="process-step">
+                            <div class="step-icon"><i class="bi bi-chat-dots"></i></div>
+                            <h5 class="mt-3 text-white">1. Alinhamento</h5>
+                            <p class="text-light small">Entendimento profundo da sua dor, público-alvo e objetivos de negócio.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4" data-anime="up">
+                        <div class="process-step">
+                            <div class="step-icon"><i class="bi bi-vector-pen"></i></div>
+                            <h5 class="mt-3 text-white">2. Prototipagem</h5>
+                            <p class="text-light small">Criação do design visual e aprovação do layout antes de iniciar o código.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4" data-anime="up">
+                        <div class="process-step">
+                            <div class="step-icon"><i class="bi bi-code-slash"></i></div>
+                            <h5 class="mt-3 text-white">3. Desenvolvimento</h5>
+                            <p class="text-light small">Construção ágil com código limpo, tecnologias modernas e testes constantes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4" data-anime="right">
+                        <div class="process-step">
+                            <div class="step-icon"><i class="bi bi-rocket"></i></div>
+                            <h5 class="mt-3 text-white">4. Entrega</h5>
+                            <p class="text-light small">Lançamento seguro do projeto, documentação e suporte técnico contínuo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        
-        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
-            <i class="bi bi-check-circle-fill"></i> {{ message }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        
+        <section id="projetos" class="mt-5 pt-5 pb-5">
+            <div class="container" data-anime="left">
+                <h2 class="pb-2">Estudos de Caso</h2>
+                <p class="mb-5 text-muted">Veja como aplico tecnologia para transformar problemas complexos em resultados.</p>
+                
+                <!--ASSIMETRIA DO MODO DE EXPOSIÇÃO DO LAYOUT DOS PROJETOS "SO MUDAR O lg-2 PARA QUALQUER NUMERO"-->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                <!------------------------------------------------------------->   
+                    <!----------------------------------PORTIFOLIO/PROJETOS--------------------------->
+                    <div class="col" data-anime="up">
+                        <div class="card project-card h-100 border-0 bg-dark shadow-lg">
+
+                            <div class="img-wrapper">
+                                <img src="./static/img/img-projetos/api-blog-urtiga-jurua/MenuPrincipal.png" class="card-img-top" alt="Plataforma de Captura">
+                                <div class="img-overlay">
+                                    <a href="#" target="_blank" class="btn btn-primary rounded-pill fw-bold shadow"><i class="bi bi-eye me-2"></i>Ver Projeto</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body d-flex flex-column p-4">
+                                <h4 class="card-title text-white mb-4">Blog</h4>
+                                
+                                <div class="case-study-text mb-4 flex-grow-1">
+                                    <p class="text-light small mb-3">
+                                        <strong class="text-danger"><i class="bi bi-x-circle me-1"></i>Problema:</strong><br>
+                                        Necessidade de um veículo de comunicação digital rápido, limpo e direto para concentrar reportagens, análises políticas e pautas do setor agrícola da região, fugindo da limitação das redes sociais.
+                                    </p>
+                                    <p class="text-light small mb-0">
+                                        <strong class="text-success"><i class="bi bi-check-circle me-1"></i>Solução:</strong><br>
+                                        Desenvolvimento de um portal de notícias totalmente responsivo, com arquitetura otimizada para SEO e carregamento rápido. O layout prioriza a retenção do leitor e a clareza da informação em qualquer dispositivo móvel.
+                                    </p>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between align-items-center mt-auto border-top border-secondary pt-3">
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge skill-badge py-1 px-2">HTML</span>
+                                        <span class="badge skill-badge py-1 px-2">CSS</span>
+                                        <span class="badge skill-badge py-1 px-2">Json</span>
+                                        <span class="badge skill-badge py-1 px-2">Node.js</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="text-info fs-4" title="Ver Repositório no GitHub"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-anime="up">
+                        <div class="card project-card h-100 border-0 bg-dark shadow-lg">
+
+                            <div class="img-wrapper">
+                                <img src="./static/img/img-projetos/Sgp-md-obras/Tela-inicial.png" class="card-img-top" alt="Plataforma de Captura">
+                                <div class="img-overlay">
+                                    <a href="https://github.com/MatheusfMoura/sgp-md-obras.git" target="_blank" class="btn btn-primary rounded-pill fw-bold shadow"><i class="bi bi-eye me-2"></i>Ver Projeto no Git</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body d-flex flex-column p-4">
+                                <h4 class="card-title text-white mb-4">SGP Estruturas Eletricas</h4>
+                                
+                                <div class="case-study-text mb-4 flex-grow-1">
+                                    <p class="text-light small mb-3">
+                                        <strong class="text-danger"><i class="bi bi-x-circle me-1"></i>Problema:</strong><br>
+                                        A conciliação de materiais estruturais era feita manualmente em dezenas de planilhas. A equipe gastava horas cruzando dados de estoque, verificando saldos e fazendo substituições de itens ("De/Para"), um processo lento e com alto risco de erro.
+                                    </p>
+                                    <p class="text-light small mb-0">
+                                        <strong class="text-success"><i class="bi bi-check-circle me-1"></i>Solução:</strong><br>
+                                        Sistema web que automatiza toda a rotina de cálculos em segundos. A plataforma agrupa os componentes, processa a lógica de "De/Para" instantaneamente e calcula as diferenças de RMA/DMA, exportando os relatórios finais em Excel prontos para uso.  
+                                    </p>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between align-items-center mt-auto border-top border-secondary pt-3">
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge skill-badge py-1 px-2">HTML</span>
+                                        <span class="badge skill-badge py-1 px-2">CSS</span>
+                                        <span class="badge skill-badge py-1 px-2">JavaScript</span>
+                                    </div>
+                                    <a href="https://github.com/MatheusfMoura/sgp-md-obras#" target="_blank" class="text-info fs-4" title="Ver Repositório no GitHub"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col" data-anime="up">
+                        <div class="card project-card h-100 border-0 bg-dark shadow-lg">
+
+                            <div class="img-wrapper">
+                                <img src="./static/img/img-projetos/api-top-rent/03-catalago-top-rent.png" class="card-img-top" alt="Plataforma de Captura">
+                                <div class="img-overlay">
+                                    <a href="https://toprent.space/catalogo.html?gestor=true" target="_blank" class="btn btn-primary rounded-pill fw-bold shadow"><i class="bi bi-eye me-2"></i>Ver Projeto</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body d-flex flex-column p-4">
+                                <h4 class="card-title text-white mb-4">Sistema Integrado de Locação de Veículos</h4>
+                                
+                                <div class="case-study-text mb-4 flex-grow-1">
+                                    <p class="text-light small mb-3">
+                                        <strong class="text-danger"><i class="bi bi-x-circle me-1"></i>Problema:</strong><br>
+                                        Controle manual de frota em planilhas, gerando risco de reservas duplicadas, perda de histórico e uma experiência de agendamento lenta para o cliente.
+                                    </p>
+                                    <p class="text-light small mb-0">
+                                        <strong class="text-success"><i class="bi bi-check-circle me-1"></i>Solução:</strong><br>
+                                        Plataforma Full Stack com painel administrativo para gestão da frota em tempo real, controle de disponibilidade e interface intuitiva para reservas seguras online.
+                                    </p>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between align-items-center mt-auto border-top border-secondary pt-3">
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge skill-badge py-1 px-2">HTML</span>
+                                        <span class="badge skill-badge py-1 px-2">CSS</span>
+                                        <span class="badge skill-badge py-1 px-2">Json</span>
+                                        <span class="badge skill-badge py-1 px-2">Node.js</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="text-info fs-4" title="Ver Repositório no GitHub"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-anime="up">
+                        <div class="card project-card h-100 border-0 bg-dark shadow-lg">
+                            
+                            <div class="img-wrapper">
+                                <img src="./static/img/img-projetos/api-checklist-engetel/Captura de tela 2026-04-28 095632.png" class="card-img-top" alt="Agregador de Links">
+                                <div class="img-overlay">
+                                    <a href="https://checklistengetel.tech/" target="_blank" class="btn btn-primary rounded-pill fw-bold shadow"><i class="bi bi-eye me-2"></i>Ver Projeto</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body d-flex flex-column p-4">
+                                <h4 class="card-title text-white mb-4">CheckList Veicular</h4>
+                                
+                                <div class="case-study-text mb-4 flex-grow-1">
+                                    <p class="text-light small mb-3">
+                                        <strong class="text-danger"><i class="bi bi-x-circle me-1"></i>Problema:</strong><br>
+                                        Processo manual, lento e descentralizado para inspecionar veículos, dificultando a manutenção preventiva e a responsabilização por avarias.
+                                    </p>
+                                    <p class="text-light small mb-0">
+                                        <strong class="text-success"><i class="bi bi-check-circle me-1"></i>Solução:</strong><br>
+                                        Sistema PWA responsivo que transforma o celular do colaborador em uma ferramenta de vistoria. Centraliza dados operacionais, elimina o uso de papel e automatiza o histórico de cada veículo no painel gerencial.
+                                    </p>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between align-items-center mt-auto border-top border-secondary pt-3">
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge skill-badge py-1 px-2">Html</span>
+                                        <span class="badge skill-badge py-1 px-2">CSS</span>
+                                        <span class="badge skill-badge py-1 px-2">Bootstrap</span>
+                                        <span class="badge skill-badge py-1 px-2">JS</span>
+                                        <span class="badge skill-badge py-1 px-2">Python</span>
+                                    </div>
+                                    <a href="https://github.com/MatheusfMoura/checklist-veicular" target="_blank" class="text-info fs-4" title="Ver Repositório no GitHub"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </section>  
     </main>
-
-    <footer id="footer">
-        <div class="container">
-            <div class="text-center">
-                &copy; Copyright <strong>Mfigueiredo</strong>
-            </div>
-        </div>
-    </footer>
-
     <script src="static/BootStrap/js/bootstrap.bundle.min.js"></script>
     <script src="static/script.js"></script>
 </body>
-
 </html>
