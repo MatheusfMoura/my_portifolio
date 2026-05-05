@@ -3,13 +3,15 @@
 /* =========================================
    BASE E ESTRUTURA
    ========================================= */
-html, body {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Ubuntu', Arial, sans-serif;
   width: 100%;
-  /* A linha height: 100%; foi removida daqui! */
   background-color: #f8f9fa;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Corta o vazamento lateral APENAS no body, matando a barra dupla */
 }
 
 #main {
@@ -24,28 +26,29 @@ html, body {
 /* =========================================
    BARRA DE ROLAGEM PERSONALIZADA (SCROLLBAR)
    ========================================= */
-*::-webkit-scrollbar {
-  width: 8px;
+::-webkit-scrollbar {
+  width: 10px;
 }
-*::-webkit-scrollbar-track {
-  width: 12px;
-  box-shadow: inset 0 0 .3rem #00000050;
-  background-color: rgb(255, 255, 255) ;
+::-webkit-scrollbar-track {
+  background-color: #12141c; 
 }
-*::-webkit-scrollbar-thumb {
-  background-color: #303a85;
+::-webkit-scrollbar-thumb {
+  background-color: #2b2b2c; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #66b4d8; 
 }
 
 /* =========================================
    TELA INICIAL (BANNER HERO PREMIUM)
    ========================================= */
 section#inicio {
-  /* Fundo escuro premium, puxando levemente para o azul marinho do seu tema */
   background: radial-gradient(circle at top right, #1a2030, #12141c);
   width: 100%;
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  padding-bottom: 120px; /* Empurra o limite escuro para baixo, evitando que os terminais invadam a área branca */
 }
 
 section#inicio h1 {
@@ -53,7 +56,6 @@ section#inicio h1 {
   letter-spacing: -1px;
 }
 
-/* Deixa os botões preenchidos mais vibrantes */
 section#inicio .btn-primary {
     background-color: #66b4d8;
     border-color: #66b4d8;
@@ -67,7 +69,6 @@ section#inicio .btn-primary:hover {
     box-shadow: 0 10px 20px rgba(102, 180, 216, 0.3) !important;
 }
 
-/* Animação suave para a setinha de rolar a página */
 .bounce-animation {
     animation: bounce 2s infinite;
 }
@@ -78,16 +79,6 @@ section#inicio .btn-primary:hover {
     60% { transform: translateY(-5px); }
 }
 
-/* Ajustes mobile para a tipografia não quebrar a tela */
-@media (max-width: 768px) {
-  section#inicio h1 {
-    font-size: 3.5rem !important;
-  }
-  section#inicio p.lead {
-    font-size: 1.1rem !important;
-  }
-}
-
 .text-shadow {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
@@ -96,7 +87,6 @@ section#inicio div#arraste {
   width: 13rem;
   font-size: 20px;
   margin-bottom: 10px;
-  margin-right: 0px;
 }
 
 section#inicio div#arraste a {
@@ -201,17 +191,15 @@ section#inicio div#arraste a {
   transition: all 0.4s ease;
 }
 
-/* Efeito de levitar o card todo */
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.4) !important;
 }
 
-/* Container da imagem preparado para o Zoom e com ALTURA FIXA */
 .img-wrapper {
   position: relative;
   overflow: hidden;
-  height: 220px; /* Trava a altura para a foto não ficar gigante */
+  height: 220px; 
   border-top-left-radius: 15px; 
   border-top-right-radius: 15px;
 }
@@ -219,25 +207,23 @@ section#inicio div#arraste a {
 .img-wrapper img {
   transition: transform 0.5s ease;
   width: 100%;
-  height: 100%; /* Preenche exatamente os 220px */
-  object-fit: cover; /* Encaixa a imagem perfeitamente, cortando as sobras */
-  object-position: top center; /* Garante que o topo do print do site seja a parte visível */
+  height: 100%; 
+  object-fit: cover; 
+  object-position: top center; 
   display: block;
 }
 
-/* Zoom na imagem ao passar o mouse */
 .project-card:hover .img-wrapper img {
   transform: scale(1.08);
 }
 
-/* Fundo escuro invisível que aparece no hover */
 .img-overlay {
   position: absolute;
   top: 0; 
   left: 0; 
   width: 100%; 
   height: 100%;
-  background: rgba(10, 15, 24, 0.75); /* Azul/Preto escuro translúcido */
+  background: rgba(10, 15, 24, 0.75); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,112 +235,15 @@ section#inicio div#arraste a {
   opacity: 1;
 }
 
-/* Textos e Cores do Corpo do Card */
 .case-study-text p {
   line-height: 1.6;
 }
 
-.text-danger {
-  color: #ff6b6b !important; 
-}
+.text-danger { color: #ff6b6b !important; }
+.text-success { color: #51cf66 !important; }
 
-.text-success {
-  color: #51cf66 !important; 
-}
-
-/* Ícone do GitHub no rodapé */
-.project-card .bi-github {
-  transition: color 0.3s ease;
-}
-
-.project-card .bi-github:hover {
-  color: #fff !important;
-}
-
-/* =========================================
-   ANIMAÇÕES DE SCROLL (DATA-ANIME)
-   ========================================= */
-[data-anime] { opacity: 0; transition: 1s; }
-[data-anime="down"] { transform: translate3d(0, -100%, 0); }
-[data-anime="up"] { transform: translate3d(0, 50px, 0); }
-[data-anime="left"] { transform: translate3d(-50px, 0, 0); }
-[data-anime="right"] { transform: translate3d(50px, 0, 0); }
-[data-anime].animate { opacity: 1; transform: translate3d(0, 0, 0); }
-
-/* =========================================
-   RESPONSIVIDADE (MOBILE & TABLET)
-   ========================================= */
-@media (max-width: 1024px) {
-  section#inicio .col-md-5 {
-    padding-top: 6rem; 
-  }
-  
-  section#inicio h2{
-    font-size: 2.8rem !important; 
-    margin-left: 0 !important; 
-    text-align: center;
-    width: 100%;
-  }
-  
-  section#inicio span#subtitle{
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    font-size: 1.2rem;
-    text-align: center;
-    display: block; 
-  }
-  
-  section#inicio div#arraste {
-    margin: 2rem auto 0 auto;
-    justify-content: center !important;
-    width: 100%;
-  }
-}
-/* =========================================
-   ESTILOS DO MODAL E CARROSSEL DE IMAGENS
-   ========================================= */
-.bg-dark-opacity {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-}
-
-/* Garante que o modal não quebra o scroll da página */
-.modal-open {
-    overflow: hidden;
-}
-
-#carouselChecklist img {
-    height: 450px;
-    object-fit: contain; /* Mantém a proporção dos prints sem cortar */
-    background-color: #1a1e29;
-}
-
-/* =========================================
-   ESTILOS DO MODAL CUSTOMIZADO
-   ========================================= */
-.modal-open {
-    overflow: hidden; /* Evita rolagem dupla */
-}
-
-/* Deixa a imagem com formato de "App" e remove aquele fundo preto feio */
-.mockup-mobile {
-    max-height: 400px;
-    object-fit: cover;
-    border: 1px solid rgba(102, 180, 216, 0.2);
-    border-radius: 12px;
-}
-
-.terminal-header {
-    background-color: #1a2030;
-    border-bottom: 1px solid rgba(102, 180, 216, 0.1);
-}
-
-.terminal-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-}
+.project-card .bi-github { transition: color 0.3s ease; }
+.project-card .bi-github:hover { color: #fff !important; }
 
 /* =========================================
    COMPOSIÇÃO DE TERMINAIS (HERO SECTION)
@@ -365,12 +254,14 @@ section#inicio div#arraste a {
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
-    max-width: 500px; /* Aumentamos a largura para 500px */
+    max-width: 500px; 
 }
 
-/* Telas sobrepostas em pirâmide bem mais espaçadas */
+.terminal-header { background-color: #1a2030; border-bottom: 1px solid rgba(102, 180, 216, 0.1); }
+.terminal-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+
 .mockup-back {
-    transform: translate(-140px, -110px) scale(0.85); /* Muito mais para a esquerda e cima */
+    transform: translate(-140px, -110px) scale(0.85); 
     z-index: 1;
     opacity: 0.35;
     filter: blur(1.5px); 
@@ -378,20 +269,19 @@ section#inicio div#arraste a {
 }
 
 .mockup-middle {
-    transform: translate(140px, -60px) scale(0.9); /* Muito mais para a direita e cima */
+    transform: translate(140px, -60px) scale(0.9); 
     z-index: 2;
     opacity: 0.7;
     transition: all 0.5s ease;
 }
 
 .mockup-front {
-    transform: translate(0px, 80px) scale(1); /* Mais para baixo (Ponta do V) */
+    transform: translate(0px, 80px) scale(1); 
     z-index: 3;
     box-shadow: 0 20px 50px rgba(0,0,0,0.8);
     transition: all 0.5s ease;
 }
 
-/* Efeito Interativo: Abre ainda mais a pirâmide ao passar o mouse */
 .col-lg-5:hover .mockup-back {
     transform: translate(-180px, -140px) scale(0.9);
     opacity: 0.9;
@@ -407,8 +297,37 @@ section#inicio div#arraste a {
     transform: translate(0px, 100px) scale(1.02);
 }
 
-/* Mantendo os elementos do terminal */
-.terminal-header { background-color: #1a2030; border-bottom: 1px solid rgba(102, 180, 216, 0.1); }
-.terminal-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
 .cursor-blink { font-weight: bold; color: #66b4d8; animation: blink 1s step-end infinite; }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* =========================================
+   ESTILOS DO MODAL E CARROSSEL 
+   ========================================= */
+.bg-dark-opacity { background: rgba(0, 0, 0, 0.7); padding: 10px; }
+.modal-open { overflow: hidden; } 
+#carouselChecklist img { height: 450px; object-fit: contain; background-color: #1a1e29; }
+.mockup-mobile { max-height: 400px; object-fit: cover; border: 1px solid rgba(102, 180, 216, 0.2); border-radius: 12px; }
+
+/* =========================================
+   ANIMAÇÕES DE SCROLL (DATA-ANIME)
+   ========================================= */
+[data-anime] { opacity: 0; transition: 1s; }
+[data-anime="down"] { transform: translate3d(0, -100%, 0); }
+[data-anime="up"] { transform: translate3d(0, 50px, 0); }
+[data-anime="left"] { transform: translate3d(-50px, 0, 0); }
+[data-anime="right"] { transform: translate3d(50px, 0, 0); }
+[data-anime].animate { opacity: 1; transform: translate3d(0, 0, 0); }
+
+/* =========================================
+   RESPONSIVIDADE (MOBILE & TABLET)
+   ========================================= */
+@media (max-width: 1024px) {
+  section#inicio h1 { font-size: 3.5rem !important; }
+  section#inicio p.lead { font-size: 1.1rem !important; }
+  
+  section#inicio div#arraste {
+    margin: 2rem auto 0 auto;
+    justify-content: center !important;
+    width: 100%;
+  }
+}
